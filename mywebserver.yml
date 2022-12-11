@@ -6,9 +6,11 @@
     apt:
        name: apache2 
        state: present
+    when: ansible_os_family =="Debian"
 
   - name: I want to start the service 
     service:
        name: apache2
        state: restarted 
+    when: ansible_os_family =="Debian"
   
