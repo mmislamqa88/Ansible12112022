@@ -7,8 +7,8 @@
        name: apache2 
        state: present
 
-  - name: I want to start the apiVersion
+  - name: I want to start the service 
     service:
        name: apache2
-       state: present 
+       state: restarted 
   
