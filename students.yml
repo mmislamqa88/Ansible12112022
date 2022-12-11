@@ -1,0 +1,22 @@
+---
+- students:
+  - name: Md
+    phone: 6462550077
+    address: 
+       street: Middle Tpke 
+       Building: 446
+       zipcode: 06040
+
+  - name: Raiyan
+    phone: 6769098976
+    address: 
+       street: Middle Tpke 
+       Building: 446
+       zipcode: 06040
+
+  - name: Ripa 
+    phone: 6765453434
+    address: 
+       street: Middle Tpke 
+       Building: 446
+       zipcode: 06040

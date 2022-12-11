@@ -1,0 +1,12 @@
+---
+- hosts: all 
+  become: yes
+  tasks:
+  - name: Install webserver
+    apt:
+       name: tree 
+       state: present 
+  - name: Install git 
+    apt:
+       name: git 
+       state: present 
