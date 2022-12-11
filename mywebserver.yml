@@ -1,0 +1,14 @@
+---
+- hosts: all 
+  become: yes
+  tasks:
+  - name: I want to Install webserver on ubuntu ansible 
+    apt:
+       name: apache2 
+       state: present
+
+  - name: I want to start the apiVersion
+    service:
+       name: apache2
+       state: present 
+  
