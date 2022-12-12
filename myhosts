@@ -20,6 +20,6 @@
 
 
 [myWebServer:vars]
-webpackonUbuntu=apache222
+webpackonUbuntu=apache2
 webpackonRedHat=httpd
 
