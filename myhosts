@@ -19,3 +19,7 @@
 172.31.21.151
 
 
+[myWebServer:vars]
+webpackonUbuntu=apache222
+webpackonRedHat=httpd
+
