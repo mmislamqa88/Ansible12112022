@@ -1,5 +1,5 @@
 ---
-- hosts: myWebServer
+- hosts: myWebServers
   become: yes
   tasks:
   - name: I want to Install webserver on ubuntu ansible 
