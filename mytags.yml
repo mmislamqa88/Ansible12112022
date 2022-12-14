@@ -1,0 +1,13 @@
+---
+- hosts: 172.31.21.151
+  become: yes
+  tasks:
+  - name: Install git 
+    apt:
+       name: git
+       state: present 
+
+  - name: install tree 
+    apt:
+       name: tree 
+       state: present 
