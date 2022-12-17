@@ -12,15 +12,23 @@
     copy: 
        src: staticfile.txt
        dest: /home/ubuntu/mystaticfile.txt
+    notify: restart webserver
 
   - name: copy index.j2 file into ansiblenode
     template: 
        src: myindex.j2
        dest: /var/www/html/index.html
+    notify: restart webserver
 
   - name: Download file and force basic auth
     get_url:
        url: https://get.jenkins.io/war-stable/2.375.1/jenkins.war
        dest: /home/ubuntu/jenkins.war
        force_basic_auth: yes
+    notify: restart webserver
+
+  - name: restart webserver
+    service: 
+       name: apache2
+       state: restarted
      
