@@ -26,7 +26,8 @@
        dest: /home/ubuntu/jenkins.war
        force_basic_auth: yes
     notify: restartWebserver
-
+    
+  handlers:
   - name: restartWebserver
     service: 
        name: apache2
