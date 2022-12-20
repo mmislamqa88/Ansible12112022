@@ -1,0 +1,21 @@
+---
+
+- name: i want to add tocat admin user 
+  template: 
+     src: templates/mytomuser.j2 
+     dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: i want to copy context file into ansible node side 
+  template:
+     src:  templates/mytomuser.j2
+     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: i want to copy host context file into ansible node side 
+  template:
+     src: templates/mytomhostcontext.j2
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+- name: i want to copy tomcat service file into ansible node side 
+  template:
+     src: templates/mytomservice.j2
+     dest: /etc/systemd/system/tomcat.service
